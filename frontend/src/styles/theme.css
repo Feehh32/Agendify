@@ -1,0 +1,17 @@
+@theme {
+  /* Colors */
+  --color-primary: #003366;
+  --color-secondary: #ff6f61;
+  --color-background: #ffffff;
+  --color-bg-light-blue: #e5f2ff;
+  --color-text: #1f2937;
+  --color-confirm: #00662e;
+  --color-dark-orange: #ff1f09;
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(to bottom, #ff6f61, #ff1f09);
+
+  /* Fonts */
+  --font-sans: "Lato", sans-serif;
+  --font-display: "Montserrat", sans-serif;
+}
