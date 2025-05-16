@@ -1,6 +1,23 @@
 @import "tailwindcss";
 @import "./theme.css";
 
+:root {
+  --gradient-primary: linear-gradient(to bottom, #ff6f61, #ff1f09);
+}
+
+.btn-gradient {
+  background-image: var(--gradient-primary);
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: opacity 0.2s;
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn-gradient:hover {
+  opacity: 0.8;
+}
+
 body {
   @apply bg-white text-text font-sans;
 }
