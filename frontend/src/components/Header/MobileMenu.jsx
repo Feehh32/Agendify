@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { Menu, X } from "lucide-react";
+// eslint-disable-next-line no-unused-vars
 import { motion, AnimatePresence } from "framer-motion";
 import Button from "../Button";
 import useOutsideClick from "../../hooks/useOutsideClick";
