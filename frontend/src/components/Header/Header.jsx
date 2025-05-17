@@ -10,7 +10,7 @@ const Header = () => {
     <header className="py-4 shadow">
       <Container className="flex justify-between items-center">
         <a href="/" aria-label="Página Inicial">
-          <img src={logo} alt="logo Agendify" className="md:h-10 h-7" />
+          <img src={logo} alt="logo Agendify" className="md:h-8 h-6" />
         </a>
         <Menu />
 
