@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../Button";
+import { Link } from "react-router-dom";
 
 const Menu = () => {
   return (
@@ -7,25 +8,25 @@ const Menu = () => {
       <nav className="hidden md:block">
         <ul className="flex gap-10 justify-center align-middle text-primary font-display font-semibold">
           <li className="transition-colors duration-300 hover:text-secondary">
-            <a href="#">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li className="transition-colors duration-300 hover:text-secondary">
-            <a href="#">Sobre</a>
+            <Link to="/about">Sobre</Link>
           </li>
           <li className="transition-colors duration-300 hover:text-secondary">
-            <a href="#">Agendar</a>
+            <Link to="/schedule">Agendar</Link>
           </li>
         </ul>
       </nav>
       <div className="hidden md:flex gap-5 items-center">
-        <a
-          href="#"
+        <Link
+          to="/login"
           className="relative font-display text-primary after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-secondary after:transition-all after:duration-300 hover:after:w-full"
         >
           Login
-        </a>
-        <Button as="a" size="sm">
-          Começar
+        </Link>
+        <Button as="child" size="sm">
+          <Link to="/register">Começar</Link>
         </Button>
       </div>
     </>

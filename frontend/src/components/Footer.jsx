@@ -3,6 +3,7 @@ import Container from "./Container";
 import Github from "../assets/icons/github.svg?react";
 import Mail from "../assets/icons/mail.svg?react";
 import Linkedin from "../assets/icons/linkedin.svg?react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -36,13 +37,13 @@ const Footer = () => {
           </span>
           <ul className="mt-4 grid gap-2 text-xs md:text-base">
             <li>
-              <a href="#">Sobre</a>
+              <Link to="/about">Sobre</Link>
             </li>
             <li>
-              <a href="#">Agendamento</a>
+              <Link to="/schedule">Agendamento</Link>
             </li>
             <li>
-              <a href="#">Termos e condições</a>
+              <Link to="/terms">Termos e condições</Link>
             </li>
           </ul>
         </div>

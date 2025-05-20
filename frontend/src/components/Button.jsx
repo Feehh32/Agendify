@@ -15,14 +15,14 @@ const Button = ({
   className = "",
   fullWidth = false,
   as = "button",
-  href = "#",
+  href = "/",
   onClick,
   type = "button",
   ...rest
 }) => {
   const baseClasses = twMerge(
     `btn-gradient ${sizeClasses[size]}${
-      fullWidth ? "w-full" : ""
+      fullWidth ? " w-full" : ""
     } inline-block text-center`,
     className
   );
@@ -33,6 +33,13 @@ const Button = ({
         {children}
       </a>
     );
+  }
+
+  if (as === "child") {
+    return React.cloneElement(children, {
+      className: twMerge(children.props.className, baseClasses),
+      ...rest,
+    });
   }
 
   return (

@@ -1,12 +1,11 @@
-import Footer from "./components/Footer.jsx";
-import Header from "./components/Header/Header.jsx";
+import { BrowserRouter } from "react-router-dom";
+import AppRoutes from "./routes/index.jsx";
 
 const App = () => {
   return (
-    <>
-      <Header />
-      <Footer />
-    </>
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
   );
 };
 

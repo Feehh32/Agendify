@@ -4,6 +4,7 @@ import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Button from "../Button";
 import useOutsideClick from "../../hooks/useOutsideClick";
+import { Link } from "react-router-dom";
 
 const MobileMenu = ({ mobileMenuOpen, setMobileMenuOpen }) => {
   const menuRef = useRef(null);
@@ -37,43 +38,43 @@ const MobileMenu = ({ mobileMenuOpen, setMobileMenuOpen }) => {
             <nav>
               <ul className={` text-primary font-display font-semibold`}>
                 <li className="py-4 border-b border-b-blue-950/20">
-                  <a
-                    href="#"
+                  <Link
+                    to="/"
                     className="block"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li className=" py-4 border-b border-b-blue-950/20">
-                  <a
-                    href="#"
+                  <Link
+                    to="/about"
                     className="block"
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    Sobre
-                  </a>
+                    About
+                  </Link>
                 </li>
                 <li className=" py-4 border-b border-b-blue-950/20">
-                  <a
-                    href="#"
+                  <Link
+                    to="/schedule"
                     className="block"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Agendar
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </nav>
             <div className="mt-4 flex justify-center w-full flex-col gap-4">
-              <a
-                href="#"
+              <Link
+                to="/login"
                 className="font-display text-primary font-semibold block text-center"
               >
                 Fazer Login
-              </a>
-              <Button as="a" size="sm" className="w-full">
-                Começar
+              </Link>
+              <Button as="child" size="sm" fullWidth>
+                <Link to="/register">Cadastro</Link>
               </Button>
             </div>
           </motion.div>
