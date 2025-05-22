@@ -14,6 +14,16 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.btn-border {
+  background-color: white;
+  color: var(--color-primary);
+  border-radius: 8px;
+  border: 2px solid var(--color-primary);
+  font-weight: 600;
+  transition: opacity 0.2s;
+  font-family: "Montserrat", sans-serif;
+}
+
 .btn-gradient:hover {
   opacity: 0.8;
 }

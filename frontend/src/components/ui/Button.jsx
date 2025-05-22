@@ -5,8 +5,9 @@ import { twMerge } from "tailwind-merge";
 const sizeClasses = {
   sm: "text-sm px-4 py-2",
   md: "text-base px-6 py-3",
-  lg: "text-lg px-8 py-4",
+  lg: "text-lg px-6 py-3",
   input: "h-12 px-6",
+  responsive: "text-sm px-4 py-2 md:text-sm md:px-6 md:py-3 lg:text-lg",
 };
 
 const Button = ({
@@ -18,10 +19,11 @@ const Button = ({
   href = "/",
   onClick,
   type = "button",
+  gradient = true,
   ...rest
 }) => {
   const baseClasses = twMerge(
-    `btn-gradient ${sizeClasses[size]}${
+    `${gradient ? " btn-gradient" : " btn-border"} ${sizeClasses[size]}${
       fullWidth ? " w-full" : ""
     } inline-block text-center`,
     className

@@ -1,13 +1,13 @@
-import logo from "../assets/logo.png";
-import Container from "./Container";
-import Github from "../assets/icons/github.svg?react";
-import Mail from "../assets/icons/mail.svg?react";
-import Linkedin from "../assets/icons/linkedin.svg?react";
+import logo from "../../assets/logo.png";
+import Container from "../ui/Container";
+import Github from "../../assets/icons/github.svg?react";
+import Mail from "../../assets/icons/mail.svg?react";
+import Linkedin from "../../assets/icons/linkedin.svg?react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="text-primary mt-32 pt-5 bg-blue-50">
+    <footer className="text-primary pt-5 bg-light-blue md:mt-20 mt-10">
       <Container className="grid grid-cols-1 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
         <div className="md:col-span-2 lg:col-span-1">
           <img src={logo} alt="Agendify logo" className="md:h-6 h-5" />
