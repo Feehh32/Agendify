@@ -3,7 +3,7 @@
   --color-primary: #003366;
   --color-secondary: #ff6f61;
   --color-background: #ffffff;
-  --color-bg-light-blue: #e5f2ff;
+  --color-light-blue: #e5f2ff;
   --color-text: #121416;
   --color-confirm: #00662e;
   --color-dark-orange: #ff1f09;
@@ -11,4 +11,5 @@
   /* Fonts */
   --font-sans: "Lato", sans-serif;
   --font-display: "Montserrat", sans-serif;
+  --shadow-base: 0px 16px 32px -4px rgba(0, 0, 0, 0.5);
 }
