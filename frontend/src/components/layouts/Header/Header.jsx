@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   return (
-    <header className="py-4 shadow-xs md:z-50">
+    <header className="py-5 shadow-xs md:z-50">
       <Container className="flex justify-between items-center">
         <Link to="/" aria-label="Página Inicial">
           <img src={logo} alt="logo Agendify" className="md:h-8 h-6" />

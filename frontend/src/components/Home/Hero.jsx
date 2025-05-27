@@ -6,10 +6,13 @@ import SectionTitle from "../ui/SectionTitle";
 
 const Hero = () => {
   return (
-    <section className="bg-light-blue md:pt-20 pt-10 lg:inset-shadow-[0_-200px_rgba(255,255,255,1)] ">
+    <section
+      className="bg-light-blue md:pt-32 pt-16 lg:inset-shadow-[0_-200px_rgba(255,255,255,1)] "
+      aria-labelledby="hero-title"
+    >
       <Container className="md:grid md:grid-cols-2 md:gap-x-40 text-center md:text-left">
         <div className="md:pt-20">
-          <SectionTitle as="h1">
+          <SectionTitle as="h1" id="hero-title">
             Agendamentos mais fáceis para o seu dia a dia
           </SectionTitle>
           <p className="pt-5 text-text lg:text-2xl md:text-lg text-base">

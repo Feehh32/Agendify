@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="text-primary pt-5 bg-light-blue md:mt-20 mt-10">
+    <footer className="text-primary pt-5 bg-light-blue md:mt-32  mt-16">
       <Container className="grid grid-cols-1 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
         <div className="md:col-span-2 lg:col-span-1">
           <img src={logo} alt="Agendify logo" className="md:h-6 h-5" />

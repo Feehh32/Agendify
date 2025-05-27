@@ -53,7 +53,7 @@ const Button = ({
 
 Button.propTypes = {
   children: PropTypes.node.isRequired,
-  size: PropTypes.oneOf(["sm", "md", "lg", "input"]),
+  size: PropTypes.oneOf(["sm", "md", "lg", "input", "responsive"]),
   className: PropTypes.string,
   fullWidth: PropTypes.bool,
   as: PropTypes.oneOf(["button", "a"]),

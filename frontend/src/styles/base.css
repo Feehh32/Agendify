@@ -5,6 +5,11 @@
   --gradient-primary: linear-gradient(to bottom, #ff6f61, #ff1f09);
 }
 
+img {
+  display: block;
+  object-fit: cover;
+}
+
 .btn-gradient {
   background-image: var(--gradient-primary);
   color: white;
@@ -12,6 +17,7 @@
   font-weight: 600;
   transition: opacity 0.2s;
   font-family: "Montserrat", sans-serif;
+  cursor: pointer;
 }
 
 .btn-border {
@@ -20,8 +26,14 @@
   border-radius: 8px;
   border: 2px solid var(--color-primary);
   font-weight: 600;
-  transition: opacity 0.2s;
+  transition: background 0.2s;
   font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+
+.btn-border:hover {
+  background-color: var(--color-primary);
+  color: white;
 }
 
 .btn-gradient:hover {
