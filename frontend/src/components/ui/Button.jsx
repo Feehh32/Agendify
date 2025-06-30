@@ -25,7 +25,7 @@ const Button = ({
   const baseClasses = twMerge(
     `${gradient ? " btn-gradient" : " btn-border"} ${sizeClasses[size]}${
       fullWidth ? " w-full" : ""
-    } inline-block text-center`,
+    } inline-block text-center cursor-pointer`,
     className
   );
 

@@ -14,24 +14,27 @@ const LastCallToAction = () => {
         <div className=" flex flex-wrap md:items-center gap-5 md:gap-10">
           <Calendar className="md:size-28 size-14 " aria-hidden="true" />
           <SectionTitle id="last-call-to-action-title" className="max-w-3xl">
-            Pronto para agendar o futuro do seu negócio?
+            Organize sua rotina profissional com mais praticidade.
           </SectionTitle>
         </div>
         <div className="md:pt-10 pt-5 grid text-text gap-5 text-lg md:text-2xl justify-center max-w-4xl">
           <p>
-            Agendify conecta você aos seus clientes de forma simples,
-            profissional e eficiente. Comece agora e veja a diferença.
+            Agendar nunca foi tão fácil. Com o Agendify, você tem o controle
+            total da sua rotina profissional, em um sistema simples, moderno e
+            direto ao ponto. Chega de anotações soltas ou horários esquecidos —
+            aqui, cada compromisso fica exatamente onde deveria: na sua agenda.
           </p>
           <p>
-            Cadastre-se gratuitamente e seja um dos primeiros a experimentar a
-            nova geração de agendamentos online.
+            Comece agora mesmo a transformar sua forma de organizar
+            atendimentos. É gratuito, rápido de configurar e feito especialmente
+            para quem vive da sua própria agenda.
           </p>
           <Button
             as="child"
             size="responsive"
             className="justify-self-center md:justify-self-start "
           >
-            <Link to="/login">Agendar agora</Link>
+            <Link to="/register">Criar minha conta gratuita</Link>
           </Button>
         </div>
       </section>

@@ -52,16 +52,7 @@ const MobileMenu = ({ mobileMenuOpen, setMobileMenuOpen }) => {
                     className="block"
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    About
-                  </Link>
-                </li>
-                <li className=" py-4 border-b border-b-blue-950/20">
-                  <Link
-                    to="/schedule"
-                    className="block"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    Agendar
+                    Sobre
                   </Link>
                 </li>
               </ul>

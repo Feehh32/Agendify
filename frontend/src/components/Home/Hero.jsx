@@ -13,18 +13,16 @@ const Hero = () => {
       <Container className="md:grid md:grid-cols-2 md:gap-x-40 text-center md:text-left">
         <div className="md:pt-20">
           <SectionTitle as="h1" id="hero-title">
-            Agendamentos mais fáceis para o seu dia a dia
+            Organize sua agenda de forma eficiente
           </SectionTitle>
           <p className="pt-5 text-text lg:text-2xl md:text-lg text-base">
-            Encontre profissionais e agende serviços, burocracias ou
-            complicações, feito no seu tempo e em poucos cliques.
+            Com o Agendify, você cadastra seus compromissos, gerencia horários e
+            tem controle total da sua rotina profissional. Rápido, simples e
+            gratuito.
           </p>
           <div className="flex gap-10 pt-5 justify-center pb-10 md:justify-start">
             <Button as="child" size="responsive">
-              <Link to="/login">Agendar agora</Link>
-            </Button>
-            <Button as="child" size="responsive" gradient={false}>
-              <Link to="/login">Ver profissionais</Link>
+              <Link to="/register">Começar agora como profissional</Link>
             </Button>
           </div>
         </div>

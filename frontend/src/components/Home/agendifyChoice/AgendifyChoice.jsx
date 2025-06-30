@@ -12,22 +12,22 @@ const AgendifyChoice = () => {
     {
       icon: Lock,
       title: "Segurança em primeiro lugar",
-      text: "Seus dados são protegidos com criptografia de ponta a ponta.",
+      text: "Seus dados e agendamentos são armazenados com segurança e privacidade.",
     },
     {
       icon: Clock,
-      title: "Agendamentos rápidos e intuitivos",
-      text: "Em poucos cliques você escolhe o melhor horário com um profissional.",
+      title: "Agendamentos rápidos e fáceis",
+      text: "Em poucos cliques, você cria, edita e visualiza todos os seus compromissos.",
     },
     {
       icon: Smartphone,
-      title: "Acesse de qualquer lugar",
-      text: "Totalemente responsivo e otimizado para dispositivos móveis.",
+      title: "Acesse de onde estiver",
+      text: "Use o Agendify no computador, tablet ou celular, sem instalar nada.",
     },
     {
       icon: Notifications,
-      title: "Notificações inteligentes",
-      text: "Recebas lembretes e atualizações diretamente no seu celular.",
+      title: "Alertas e organização",
+      text: "Com lembretes e visual claro da agenda, você nunca mais perde um horário.",
     },
   ];
 
@@ -41,8 +41,8 @@ const AgendifyChoice = () => {
           Por que escolher o Agendify?
         </SectionTitle>
         <p className="pt-5 text-text lg:text-2xl md:text-lg text-base max-w-3xl text-center mx-auto">
-          Descubra como facilitamos sua rotina e proporcionamos uma experiência
-          sem complicações
+          Descubra como o Agendify pode transformar sua rotina profissional com
+          mais controle, agilidade e tranquilidade.
         </p>
         <div className="mt-10 flex justify-center flex-wrap items-center gap-10">
           <div className="max-w-md">

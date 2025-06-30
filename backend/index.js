@@ -4,23 +4,12 @@ require("dotenv").config();
 
 const app = express();
 const port = process.env.PORT || 5000;
+
+const registerRoute = require("./routes/register");
+
 app.use(cors());
 app.use(express.json());
-const pool = require("./db");
-
-app.get("/", async (req, res) => {
-  res.send("Api working and ready");
-});
-
-app.get("/categories", async (req, res) => {
-  try {
-    const { rows } = await pool.query("SELECT * FROM categories");
-    res.json({ rows });
-  } catch (err) {
-    console.error("Error on categories search:", err.message);
-    res.status(500).send("Error on server");
-  }
-});
+app.use("/api", registerRoute);
 
 app.listen(port, () => {
   console.log(`Server running in http://localhost:${port}`);

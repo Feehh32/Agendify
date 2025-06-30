@@ -1,6 +1,7 @@
 import Button from "../../ui/Button";
 import calendar_img from "../../../assets/img/calendar_img.png";
 import Check from "../../../assets/icons/check_icon.svg?react";
+import { Link } from "react-router-dom";
 
 const ProfessionalCallToAction = () => {
   return (
@@ -40,8 +41,8 @@ const ProfessionalCallToAction = () => {
             </p>
           </li>
         </ul>
-        <Button fullWidth={true} className="mt-5" size="responsive">
-          Começar agora como profissional
+        <Button as="child" fullWidth={true} className="mt-5" size="responsive">
+          <Link to="/register">Começar agora como profissional</Link>
         </Button>
       </div>
       <div className="lg:block hidden">
