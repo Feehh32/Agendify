@@ -4,8 +4,10 @@ import RegisterForm from "../components/registerPage/RegisterForm";
 import validateProfessionalForm from "../utills/validateProfessionalForm";
 import api from "../services/api";
 import { useNavigate } from "react-router-dom";
+import usePageTitle from "../hooks/usePageTitle";
 
 const RegisterPage = () => {
+  usePageTitle("Cadastro");
   const [errors, setErrors] = useState({});
   const navigate = useNavigate();
   useEffect(() => {
