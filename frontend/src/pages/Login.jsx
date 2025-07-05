@@ -7,10 +7,14 @@ import LoginForm from "../components/login/LoginForm";
 import logo from "../assets/logo.png";
 import api from "../services/api";
 import validateLoginForm from "../utills/validateLoginForm";
+import { useAuth } from "../contexts/AuthContext";
+import usePageTitle from "../hooks/usePageTitle";
 
 const Login = () => {
+  usePageTitle("Login");
   const [errors, setErrors] = useState({});
   const navigate = useNavigate();
+  const { login } = useAuth();
 
   const handleSubmit = async (formdata) => {
     const validationErrors = validateLoginForm(formdata);
@@ -20,7 +24,8 @@ const Login = () => {
     }
 
     try {
-      await api.post("api/login", formdata);
+      const response = await api.post("api/login", formdata);
+      login(response.data.user, response.data.token);
 
       setErrors({});
       navigate("/dashboard");
@@ -34,11 +39,13 @@ const Login = () => {
     <section className="flex justify-center items-center md:mt-32 mt-16">
       <Container>
         <div className="p-10 shadow-[1px_1px_4px_rgba(0,0,0,0.25)] rounded-2xl max-w-lg">
-          <img
-            src={logo}
-            alt="Professional using agendify"
-            className="max-w-[128px] mx-auto block object-cover"
-          />
+          <Link to="/" aria-label="Página Inicial" className="block mb-5">
+            <img
+              src={logo}
+              alt="Agendify logo"
+              className="md:h-10 h-5 m-auto"
+            />
+          </Link>
           <h1 className="text-secondary font-display font-semibold text-2xl md:text-3xl text-center mt-5">
             Seja Bem Vindo!
           </h1>

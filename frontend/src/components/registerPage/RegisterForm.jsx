@@ -3,6 +3,8 @@ import { useState } from "react";
 import SectionTitle from "../ui/SectionTitle";
 import Button from "../ui/Button";
 import PropTypes from "prop-types";
+import logo from "../../assets/logo.png";
+import { Link } from "react-router-dom";
 
 const RegisterForm = ({ onSubmit, errors = {}, setErrors }) => {
   const [formData, setFormData] = useState({
@@ -82,6 +84,9 @@ const RegisterForm = ({ onSubmit, errors = {}, setErrors }) => {
       className=" shadow-base rounded-2xl p-5 md:p-16"
       aria-labelledby="register-client-form-title"
     >
+      <Link to="/" aria-label="Página Inicial" className="block mb-5">
+        <img src={logo} alt="Agendify logo" className="md:h-10 h-5 m-auto" />
+      </Link>
       <SectionTitle id="register-client-form-title" className="text-center">
         Crie sua conta<span className="text-secondary">.</span>
       </SectionTitle>
